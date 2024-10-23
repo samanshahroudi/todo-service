@@ -17,7 +17,7 @@ To start the project, apply migrations, and run tests, follow the steps below.
 ### 1. Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/samanshahroudi/todo-service.git
 cd todo-service
 ```
 
