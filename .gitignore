@@ -1,20 +1,37 @@
-# Binaries
-bin/
-*.exe
-*.dll
-*.so
-*.dylib
-
-# Dependency directories
-vendor/
-Gopkg.lock
-go.sum
-
-# IDE/Editor directories and files
-.idea/
-.vscode/
-*.swp
-
 # LocalStack generated files
 .localstack/
 *.localstack
+
+# Docker files and directories
+docker-compose.override.yml
+docker-compose.local.yml
+
+# Temporary files
+*.tmp
+*.log
+
+# Build artifacts
+bin/
+obj/
+
+# Go build files
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+*.pdb
+*.db
+
+# Environment variable files
+.env
+.env.local
+.env.*.local
+
+# IDE specific files
+.idea/
+*.sublime-project
+*.sublime-workspace
+.vscode/

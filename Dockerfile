@@ -1,11 +1,11 @@
 # Stage 1: Build the Go application
 FROM golang:1.23-alpine AS builder
 
-## Install git
-#RUN apk add --no-cache git
-#
-## Set the Go module proxy
-#ENV GOPROXY=https://proxy.golang.org,direct
+# Install git
+RUN apk add --no-cache git
+
+# Set the Go module proxy
+ENV GOPROXY=https://proxy.golang.org,direct
 
 # Set the working directory inside the container
 WORKDIR /app
