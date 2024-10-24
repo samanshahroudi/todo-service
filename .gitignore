@@ -1,6 +1,7 @@
 # LocalStack generated files
 .localstack/
 *.localstack
+localstack/
 
 # Docker files and directories
 docker-compose.override.yml

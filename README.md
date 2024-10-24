@@ -44,7 +44,7 @@ AWS_ADDRESS=http://localstack:4566
 Run the following command to start the project and its dependencies using Docker Compose:
 
 ```bash
-docker-compose up
+make run
 ```
 This will:
 
@@ -59,14 +59,14 @@ If you're using GORM for auto migrations, the application will automatically app
 ### 5. Run Unit Tests
 To run the unit tests, use the following command:
 ```bash
-docker-compose exec app go test ./...
+make test
 ```
 This command will execute all unit tests within the project.
 
 ### 6. Run Benchmarks
 To run the benchmarks for Todo item creation, file uploads, and SQS messaging, use the following command:
 ```bash
-docker-compose exec app go test -bench=.
+make benchmark
 ```
 This will run all benchmarks and output performance metrics.
 
@@ -96,7 +96,7 @@ This will run all benchmarks and output performance metrics.
 ### Troubleshooting
 * If you encounter issues with connecting to LocalStack or PostgreSQL, ensure that both services are up and running in Docker. You can check the logs with:
 ```bash
-docker-compose logs
+docker compose logs
 ```
 
 
